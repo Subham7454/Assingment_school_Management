@@ -118,11 +118,4 @@ Feel free to fork this repository and submit pull requests with improvements or 
 License
 This project is open source and available under the MIT License.
 
-vbnet
-Copy code
 
-### Instructions:
-- Replace `YourUsername` in the GitHub URL with your actual GitHub username.
-- You may want to adjust the project description, installation steps, or any details to suit your project's structure better.
-
-This should give users clear instructions on setting up and using the project, as well as informat
