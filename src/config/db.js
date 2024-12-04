@@ -1,14 +1,27 @@
-
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
-
+import url from 'url';
 
 dotenv.config();
 
-const db = mysql.createConnection({
-    uri: process.env.DB_URI,
-});
 
+const dbUri = process.env.DB_URI;
+const parsedUrl = url.parse(dbUri);
+
+
+const [username, password] = parsedUrl.auth.split(':');
+const database = parsedUrl.path.replace('/', '');
+const host = parsedUrl.hostname;
+const port = parsedUrl.port;
+
+
+const db = mysql.createConnection({
+    host,
+    user: username,
+    password,
+    database,
+    port
+});
 
 db.connect((err) => {
     if (err) {
