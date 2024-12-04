@@ -1,4 +1,6 @@
 # School Management System
+# Deployed link-assingmentschoolmanagement-production.up.railway.app
+you can use this in postman for testing
 
 A simple and efficient School Management System API built using Node.js, Express, MySQL, and other related technologies. This project allows users to manage school records, including adding new schools and fetching a list of schools sorted by proximity to the user's location.
 
